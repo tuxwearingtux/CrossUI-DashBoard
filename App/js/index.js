@@ -34,9 +34,9 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("3.75em")
                 .setZIndex(10)
                 .setCustomStyle({
-                    "KEY":{
-                        "background-color":"#3498DB",
-                        "box-shadow":"0px 2px 4px 0px #BC8F8F"
+                    "KEY" : {
+                        "background-color" : "#3498DB",
+                        "box-shadow" : "0px 2px 4px 0px #BC8F8F"
                     }
                 })
             );
@@ -78,8 +78,8 @@ xui.Class('App', 'xui.Module',{
                 .setPosition("static")
                 .setCaption("Tom")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF"
+                    "KEY" : {
+                        "color" : "#FFFFFF"
                     }
                 })
             );
@@ -93,8 +93,8 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("")
                 .setImageClass("xui-icon-sort-checked")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF"
+                    "KEY" : {
+                        "color" : "#FFFFFF"
                     }
                 })
             );
@@ -108,8 +108,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("2.375em")
                 .setSrc("{/}img/logo.png")
                 .setCustomStyle({
-                    "KEY":{
-                        "opacity":0.75
+                    "KEY" : {
+                        "opacity" : 0.75
                     }
                 })
             );
@@ -117,24 +117,23 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_div17.append(
                 xui.create("xui.UI.Gallery")
                 .setHost(host,"xui_ui_gallery3")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"Search",
-                        "imageClass":"xui-icon-search"
+                        "id" : "a",
+                        "caption" : "Search",
+                        "imageClass" : "xui-icon-search"
                     },
                     {
-                        "id":"b",
-                        "caption":"Mail",
-                        "imageClass":"xui-uicmd-file",
-                        "flagText":"3"
+                        "id" : "b",
+                        "caption" : "Mail",
+                        "imageClass" : "xui-uicmd-file",
+                        "flagText" : "3"
                     },
                     {
-                        "id":"c",
-                        "caption":"Message",
-                        "imageClass":"xui-uicmd-remove",
-                        "flagText":"8"
+                        "id" : "c",
+                        "caption" : "Message",
+                        "imageClass" : "xui-uicmd-remove",
+                        "flagText" : "8"
                     }
                 ])
                 .setTop("0.6875em")
@@ -149,34 +148,34 @@ xui.Class('App', 'xui.Module',{
                 .setValue("")
                 .onClick([
                     {
-                        "desc":"Action1",
-                        "type":"control",
-                        "target":"xui_ui_svgpaper10",
-                        "method":"popUp",
-                        "conditions":[
+                        "desc" : "Action1",
+                        "type" : "control",
+                        "target" : "xui_ui_svgpaper10",
+                        "method" : "popUp",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"a"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "a"
                             }
                         ],
-                        "event":2,
-                        "args":[
+                        "event" : 2,
+                        "args" : [
                             "{page.xui_ui_svgpaper10.popUp()}"
                         ],
-                        "redirection":"other:callback:call"
+                        "redirection" : "other:callback:call"
                     }
                 ])
                 .setCustomStyle({
-                    "ITEMS":{
-                        "background-color":"transparent",
-                        "overflow":"hidden"
+                    "ITEMS" : {
+                        "background-color" : "transparent",
+                        "overflow" : "hidden"
                     },
-                    "ICON":{
-                        "font-size":"2em"
+                    "ICON" : {
+                        "font-size" : "2em"
                     },
-                    "ITEM":{
-                        "background-color":"transparent"
+                    "ITEM" : {
+                        "background-color" : "transparent"
                     }
                 })
             );
@@ -196,38 +195,37 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list8")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"My Profile",
-                        "imageClass":"xui-icon-smill"
+                        "id" : "a",
+                        "caption" : "My Profile",
+                        "imageClass" : "xui-icon-smill"
                     },
                     {
-                        "id":"b",
-                        "caption":"My Account",
-                        "imageClass":"xui-uicmd-opt"
+                        "id" : "b",
+                        "caption" : "My Account",
+                        "imageClass" : "xui-uicmd-opt"
                     },
                     {
-                        "id":"c",
-                        "caption":"My Calender",
-                        "imageClass":"xui-uicmd-datetime"
+                        "id" : "c",
+                        "caption" : "My Calender",
+                        "imageClass" : "xui-uicmd-datetime"
                     },
                     {
-                        "id":"d",
-                        "caption":"My Tasks",
-                        "imageClass":"xui-icon-bullet",
-                        "disabled":false
+                        "id" : "d",
+                        "caption" : "My Tasks",
+                        "imageClass" : "xui-icon-bullet",
+                        "disabled" : false
                     },
                     {
-                        "id":"e",
-                        "type":"split",
-                        "caption":"e"
+                        "id" : "e",
+                        "type" : "split",
+                        "caption" : "e"
                     },
                     {
-                        "id":"f",
-                        "caption":"Log out",
-                        "imageClass":"xui-uicmd-popbox"
+                        "id" : "f",
+                        "caption" : "Log out",
+                        "imageClass" : "xui-uicmd-popbox"
                     }
                 ])
                 .setClassName("xui-ui-shadow")
@@ -243,19 +241,19 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_svg_path1")
                 .setSvgTag("Shapes:Triangle")
                 .setAttr({
-                    "path":"M,21,21L,28,1L,51,21",
-                    "stroke":"#B6B6B6",
-                    "fill":"#ffffff"
+                    "path" : "M,21,21L,28,1L,51,21",
+                    "stroke" : "#B6B6B6",
+                    "fill" : "#ffffff"
                 })
             );
             
             append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"xui_ui_svgpaper10")
-                .setRight("3em")
                 .setTop("3.5em")
                 .setWidth("17em")
                 .setHeight("4.5em")
+                .setRight("3em")
                 .setZIndex(1002)
                 .setOverflow("visible")
                 .setGraphicZIndex(2)
@@ -277,7 +275,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_svgpaper10.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput718")
-                .setDirtyMark(false)
                 .setLeft("0.625em")
                 .setTop("1.875em")
                 .setWidth("14.875em")
@@ -294,9 +291,9 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_svg_path10")
                 .setSvgTag("Shapes:Triangle")
                 .setAttr({
-                    "path":"M,140,21L,133,1L,110,21",
-                    "stroke":"#B6B6B6",
-                    "fill":"#ffffff"
+                    "path" : "M,140,21L,133,1L,110,21",
+                    "stroke" : "#B6B6B6",
+                    "fill" : "#ffffff"
                 })
             );
             
@@ -305,35 +302,35 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_buttonviews2")
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"Dashboard",
-                        "image":"",
-                        "imageBgSize":"",
-                        "imageClass":"fa fa-lg fa-dashboard"
+                        "id" : "a",
+                        "caption" : "Dashboard",
+                        "image" : "",
+                        "imageBgSize" : "",
+                        "imageClass" : "fa fa-lg fa-dashboard"
                     },
                     {
-                        "id":"b",
-                        "caption":"Forms",
-                        "image":"",
-                        "imageBgSize":"",
-                        "imageClass":"fa fa-lg fa-wpforms"
+                        "id" : "b",
+                        "caption" : "Forms",
+                        "image" : "",
+                        "imageBgSize" : "",
+                        "imageClass" : "fa fa-lg fa-wpforms"
                     },
                     {
-                        "id":"c",
-                        "caption":"Charts",
-                        "image":"",
-                        "imageBgSize":"",
-                        "imageClass":"fa fa-lg fa-area-chart"
+                        "id" : "c",
+                        "caption" : "Charts",
+                        "image" : "",
+                        "imageBgSize" : "",
+                        "imageClass" : "fa fa-lg fa-area-chart"
                     },
                     {
-                        "id":"d",
-                        "caption":"File Manager",
-                        "image":"",
-                        "imageBgSize":"",
-                        "imageClass":"fa fa-lg fa-folder-open-o",
-                        "closeBtn":false,
-                        "optBtn":false,
-                        "popBtn":false
+                        "id" : "d",
+                        "caption" : "File Manager",
+                        "image" : "",
+                        "imageBgSize" : "",
+                        "imageClass" : "fa fa-lg fa-folder-open-o",
+                        "closeBtn" : false,
+                        "optBtn" : false,
+                        "popBtn" : false
                     }
                 ])
                 .setLeft("0em")
@@ -343,18 +340,18 @@ xui.Class('App', 'xui.Module',{
                 .setValue("a")
                 .onItemSelected([
                     {
-                        "desc":"Action 1",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [
                             "files"
                         ],
-                        "method":"fireItemClickEvent",
-                        "conditions":[
+                        "method" : "fireItemClickEvent",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"d"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "d"
                             }
                         ]
                     }
@@ -368,14 +365,14 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("13.125em")
                 .setTop("4.375em")
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 })
                 .setConDockFlexFill("none")
                 .setConDockStretch("0.5"),
@@ -406,42 +403,42 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("21.125em")
                 .setChartType("Pie2D")
                 .setJSONData({
-                    "chart":{
-                        "caption":"Monthly Sales Summary",
-                        "subcaption":"For the year 2006",
-                        "xaxisname":"Month",
-                        "yaxisname":"Sales",
-                        "numberprefix":"$",
-                        "useroundedges":"1",
-                        "bgcolor":"FFFFFF,FFFFFF",
-                        "showborder":"0",
-                        "enablerotation":"0",
-                        "animation":"0"
+                    "chart" : {
+                        "caption" : "Monthly Sales Summary",
+                        "subcaption" : "For the year 2006",
+                        "xaxisname" : "Month",
+                        "yaxisname" : "Sales",
+                        "numberprefix" : "$",
+                        "useroundedges" : "1",
+                        "bgcolor" : "FFFFFF,FFFFFF",
+                        "showborder" : "0",
+                        "enablerotation" : "0",
+                        "animation" : "0"
                     },
-                    "data":[
+                    "data" : [
                         {
-                            "label":"January",
-                            "value":"17400"
+                            "label" : "January",
+                            "value" : "17400"
                         },
                         {
-                            "label":"February",
-                            "value":"19800"
+                            "label" : "February",
+                            "value" : "19800"
                         },
                         {
-                            "label":"March",
-                            "value":"21800"
+                            "label" : "March",
+                            "value" : "21800"
                         },
                         {
-                            "label":"April",
-                            "value":"23800"
+                            "label" : "April",
+                            "value" : "23800"
                         },
                         {
-                            "label":"May",
-                            "value":"29600"
+                            "label" : "May",
+                            "value" : "29600"
                         },
                         {
-                            "label":"June",
-                            "value":"27600"
+                            "label" : "June",
+                            "value" : "27600"
                         }
                     ]
                 })
@@ -470,123 +467,123 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("21.125em")
                 .setChartType("MSColumn2D")
                 .setJSONData({
-                    "chart":{
-                        "caption":"Business Results 2005 v 2006",
-                        "xaxisname":"Month",
-                        "yaxisname":"Revenue",
-                        "showvalues":"0",
-                        "numberprefix":"$",
-                        "useroundedges":"0",
-                        "animation":"0",
-                        "bgcolor":"FFFFFF",
-                        "borderthickness":"0",
-                        "showborder":"0",
-                        "canvasborderthickness":"1"
+                    "chart" : {
+                        "caption" : "Business Results 2005 v 2006",
+                        "xaxisname" : "Month",
+                        "yaxisname" : "Revenue",
+                        "showvalues" : "0",
+                        "numberprefix" : "$",
+                        "useroundedges" : "0",
+                        "animation" : "0",
+                        "bgcolor" : "FFFFFF",
+                        "borderthickness" : "0",
+                        "showborder" : "0",
+                        "canvasborderthickness" : "1"
                     },
-                    "categories":[
+                    "categories" : [
                         {
-                            "category":[
+                            "category" : [
                                 {
-                                    "label":"Jan"
+                                    "label" : "Jan"
                                 },
                                 {
-                                    "label":"Feb"
+                                    "label" : "Feb"
                                 },
                                 {
-                                    "label":"Mar"
+                                    "label" : "Mar"
                                 },
                                 {
-                                    "label":"Apr"
+                                    "label" : "Apr"
                                 },
                                 {
-                                    "label":"May"
+                                    "label" : "May"
                                 },
                                 {
-                                    "label":"Jun"
+                                    "label" : "Jun"
                                 },
                                 {
-                                    "vline":"1",
-                                    "color":"FF5904",
-                                    "thickness":"2"
+                                    "vline" : "1",
+                                    "color" : "FF5904",
+                                    "thickness" : "2"
                                 },
                                 {
-                                    "label":"July"
+                                    "label" : "July"
                                 }
                             ]
                         }
                     ],
-                    "dataset":[
+                    "dataset" : [
                         {
-                            "seriesname":"2006",
-                            "data":[
+                            "seriesname" : "2006",
+                            "data" : [
                                 {
-                                    "value":"27400"
+                                    "value" : "27400"
                                 },
                                 {
-                                    "value":"29800"
+                                    "value" : "29800"
                                 },
                                 {
-                                    "value":"25800"
+                                    "value" : "25800"
                                 },
                                 {
-                                    "value":"26800"
+                                    "value" : "26800"
                                 },
                                 {
-                                    "value":"29600"
+                                    "value" : "29600"
                                 },
                                 {
-                                    "value":"32600"
+                                    "value" : "32600"
                                 },
                                 {
-                                    "value":"31800"
+                                    "value" : "31800"
                                 }
                             ]
                         },
                         {
-                            "seriesname":"2005",
-                            "data":[
+                            "seriesname" : "2005",
+                            "data" : [
                                 {
-                                    "value":"10000"
+                                    "value" : "10000"
                                 },
                                 {
-                                    "value":"11500"
+                                    "value" : "11500"
                                 },
                                 {
-                                    "value":"12500"
+                                    "value" : "12500"
                                 },
                                 {
-                                    "value":"15000"
+                                    "value" : "15000"
                                 },
                                 {
-                                    "value":"11000"
+                                    "value" : "11000"
                                 },
                                 {
-                                    "value":"9800"
+                                    "value" : "9800"
                                 },
                                 {
-                                    "value":"11800"
+                                    "value" : "11800"
                                 }
                             ]
                         }
                     ],
-                    "trendlines":[
+                    "trendlines" : [
                         {
-                            "line":[
+                            "line" : [
                                 {
-                                    "startvalue":"26000",
-                                    "color":"91C728",
-                                    "displayvalue":"Target",
-                                    "showontop":"1"
+                                    "startvalue" : "26000",
+                                    "color" : "91C728",
+                                    "displayvalue" : "Target",
+                                    "showontop" : "1"
                                 }
                             ]
                         }
                     ],
-                    "annotations":{
-                        "groups":[
+                    "annotations" : {
+                        "groups" : [
                             {
-                                "items":[
+                                "items" : [
                                     {
-                                        "type":"text"
+                                        "type" : "text"
                                     }
                                 ]
                             }
@@ -619,123 +616,123 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("16.125em")
                 .setChartType("MSLine")
                 .setJSONData({
-                    "chart":{
-                        "caption":"Business Results 2005 v 2006",
-                        "xaxisname":"Month",
-                        "yaxisname":"Revenue",
-                        "showvalues":"0",
-                        "numberprefix":"$",
-                        "useroundedges":"1",
-                        "animation":"0",
-                        "borderthickness":"0",
-                        "bgcolor":"FFFFFF",
-                        "showshadow":"0",
-                        "canvasborderthickness":"1"
+                    "chart" : {
+                        "caption" : "Business Results 2005 v 2006",
+                        "xaxisname" : "Month",
+                        "yaxisname" : "Revenue",
+                        "showvalues" : "0",
+                        "numberprefix" : "$",
+                        "useroundedges" : "1",
+                        "animation" : "0",
+                        "borderthickness" : "0",
+                        "bgcolor" : "FFFFFF",
+                        "showshadow" : "0",
+                        "canvasborderthickness" : "1"
                     },
-                    "categories":[
+                    "categories" : [
                         {
-                            "category":[
+                            "category" : [
                                 {
-                                    "label":"Jan"
+                                    "label" : "Jan"
                                 },
                                 {
-                                    "label":"Feb"
+                                    "label" : "Feb"
                                 },
                                 {
-                                    "label":"Mar"
+                                    "label" : "Mar"
                                 },
                                 {
-                                    "label":"Apr"
+                                    "label" : "Apr"
                                 },
                                 {
-                                    "label":"May"
+                                    "label" : "May"
                                 },
                                 {
-                                    "label":"Jun"
+                                    "label" : "Jun"
                                 },
                                 {
-                                    "vline":"1",
-                                    "color":"FF5904",
-                                    "thickness":"2"
+                                    "vline" : "1",
+                                    "color" : "FF5904",
+                                    "thickness" : "2"
                                 },
                                 {
-                                    "label":"July"
+                                    "label" : "July"
                                 }
                             ]
                         }
                     ],
-                    "dataset":[
+                    "dataset" : [
                         {
-                            "seriesname":"2006",
-                            "data":[
+                            "seriesname" : "2006",
+                            "data" : [
                                 {
-                                    "value":"27400"
+                                    "value" : "27400"
                                 },
                                 {
-                                    "value":"29800"
+                                    "value" : "29800"
                                 },
                                 {
-                                    "value":"25800"
+                                    "value" : "25800"
                                 },
                                 {
-                                    "value":"26800"
+                                    "value" : "26800"
                                 },
                                 {
-                                    "value":"29600"
+                                    "value" : "29600"
                                 },
                                 {
-                                    "value":"32600"
+                                    "value" : "32600"
                                 },
                                 {
-                                    "value":"31800"
+                                    "value" : "31800"
                                 }
                             ]
                         },
                         {
-                            "seriesname":"2005",
-                            "data":[
+                            "seriesname" : "2005",
+                            "data" : [
                                 {
-                                    "value":"10000"
+                                    "value" : "10000"
                                 },
                                 {
-                                    "value":"11500"
+                                    "value" : "11500"
                                 },
                                 {
-                                    "value":"12500"
+                                    "value" : "12500"
                                 },
                                 {
-                                    "value":"15000"
+                                    "value" : "15000"
                                 },
                                 {
-                                    "value":"11000"
+                                    "value" : "11000"
                                 },
                                 {
-                                    "value":"9800"
+                                    "value" : "9800"
                                 },
                                 {
-                                    "value":"11800"
+                                    "value" : "11800"
                                 }
                             ]
                         }
                     ],
-                    "trendlines":[
+                    "trendlines" : [
                         {
-                            "line":[
+                            "line" : [
                                 {
-                                    "startvalue":"26000",
-                                    "color":"91C728",
-                                    "displayvalue":"Target",
-                                    "showontop":"1"
+                                    "startvalue" : "26000",
+                                    "color" : "91C728",
+                                    "displayvalue" : "Target",
+                                    "showontop" : "1"
                                 }
                             ]
                         }
                     ],
-                    "annotations":{
-                        "groups":[
+                    "annotations" : {
+                        "groups" : [
                             {
-                                "items":[
+                                "items" : [
                                     {
-                                        "type":"text"
+                                        "type" : "text"
                                     }
                                 ]
                             }
@@ -767,126 +764,126 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("16.125em")
                 .setChartType("Radar")
                 .setJSONData({
-                    "chart":{
-                        "caption":"Radar Chart",
-                        "anchoralpha":"0",
-                        "showborder":"0",
-                        "animation":"0",
-                        "bgcolor":"FFFFFF"
+                    "chart" : {
+                        "caption" : "Radar Chart",
+                        "anchoralpha" : "0",
+                        "showborder" : "0",
+                        "animation" : "0",
+                        "bgcolor" : "FFFFFF"
                     },
-                    "categories":[
+                    "categories" : [
                         {
-                            "category":[
+                            "category" : [
                                 {
-                                    "label":"Index 1"
+                                    "label" : "Index 1"
                                 },
                                 {
-                                    "label":"Index 2"
+                                    "label" : "Index 2"
                                 },
                                 {
-                                    "label":"Index 3"
+                                    "label" : "Index 3"
                                 },
                                 {
-                                    "label":"Index 4"
+                                    "label" : "Index 4"
                                 },
                                 {
-                                    "label":"Index 5"
+                                    "label" : "Index 5"
                                 },
                                 {
-                                    "label":"Index 6"
+                                    "label" : "Index 6"
                                 },
                                 {
-                                    "label":"Index 7"
+                                    "label" : "Index 7"
                                 },
                                 {
-                                    "label":"Index 8"
+                                    "label" : "Index 8"
                                 },
                                 {
-                                    "label":"Index 9"
+                                    "label" : "Index 9"
                                 },
                                 {
-                                    "label":"Index 10"
+                                    "label" : "Index 10"
                                 },
                                 {
-                                    "label":"Index 11"
+                                    "label" : "Index 11"
                                 }
                             ]
                         }
                     ],
-                    "dataset":[
+                    "dataset" : [
                         {
-                            "seriesname":"Series 1",
-                            "data":[
+                            "seriesname" : "Series 1",
+                            "data" : [
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"7"
+                                    "value" : "7"
                                 },
                                 {
-                                    "value":"8"
+                                    "value" : "8"
                                 },
                                 {
-                                    "value":"8"
+                                    "value" : "8"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"7"
+                                    "value" : "7"
                                 },
                                 {
-                                    "value":"8"
+                                    "value" : "8"
                                 }
                             ]
                         },
                         {
-                            "seriesname":"Series 2",
-                            "data":[
+                            "seriesname" : "Series 2",
+                            "data" : [
                                 {
-                                    "value":"5"
+                                    "value" : "5"
                                 },
                                 {
-                                    "value":"3"
+                                    "value" : "3"
                                 },
                                 {
-                                    "value":"2"
+                                    "value" : "2"
                                 },
                                 {
-                                    "value":"4"
+                                    "value" : "4"
                                 },
                                 {
-                                    "value":"5"
+                                    "value" : "5"
                                 },
                                 {
-                                    "value":"9"
+                                    "value" : "9"
                                 },
                                 {
-                                    "value":"5"
+                                    "value" : "5"
                                 },
                                 {
-                                    "value":"3"
+                                    "value" : "3"
                                 },
                                 {
-                                    "value":"2"
+                                    "value" : "2"
                                 },
                                 {
-                                    "value":"4"
+                                    "value" : "4"
                                 },
                                 {
-                                    "value":"5"
+                                    "value" : "5"
                                 }
                             ]
                         }
@@ -901,14 +898,14 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("14em")
                 .setTop("5.25em")
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 })
                 .setConDockFlexFill("width"),
                 "b"
@@ -923,8 +920,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("auto")
                 .setOverflow("visible")
                 .setConDockSpacing({
-                    "width":0,
-                    "height":10
+                    "width" : 0,
+                    "height" : 10
                 })
             );
             
@@ -938,14 +935,14 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("16.875em")
                 .setConLayoutColumns(1)
                 .setConDockPadding({
-                    "left":8,
-                    "top":8,
-                    "right":8,
-                    "bottom":8
+                    "left" : 8,
+                    "top" : 8,
+                    "right" : 8,
+                    "bottom" : 8
                 })
                 .setConDockSpacing({
-                    "width":0,
-                    "height":16
+                    "width" : 0,
+                    "height" : 16
                 })
                 .setCaption("Users")
                 .setImageClass("fa fa-lg fa-user")
@@ -957,7 +954,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel33.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input17")
-                .setDirtyMark(false)
                 .setLeft("6.25em")
                 .setWidth("24.8125em")
                 .setPosition("relative")
@@ -968,7 +964,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel33.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input19")
-                .setDirtyMark(false)
                 .setLeft("2.5em")
                 .setWidth("24.8125em")
                 .setPosition("relative")
@@ -979,7 +974,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel33.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput106")
-                .setDirtyMark(false)
                 .setLeft("9.375em")
                 .setWidth("24.8125em")
                 .setPosition("relative")
@@ -991,7 +985,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel33.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input20")
-                .setDirtyMark(false)
                 .setLeft("3.125em")
                 .setWidth("24.8125em")
                 .setPosition("relative")
@@ -1012,7 +1005,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block20.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button19")
-                .setDirtyMark(false)
                 .setLeft("1.8125em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1022,7 +1014,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block20.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button20")
-                .setDirtyMark(false)
                 .setLeft("8em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1039,27 +1030,27 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("26.3125em")
                 .setConLayoutColumns(1)
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 })
                 .setCaption("Tasks")
                 .setImageClass("fa fa-lg fa-tasks")
                 .setToggleBtn(true)
                 .setTagCmds([
                     {
-                        "id":"a",
-                        "type":"text",
-                        "itemClass":"xuicon xui-uicmd-file"
+                        "id" : "a",
+                        "type" : "text",
+                        "itemClass" : "xuicon xui-uicmd-file"
                     },
                     {
-                        "id":"b",
-                        "itemClass":"xuicon xui-icon-print"
+                        "id" : "b",
+                        "itemClass" : "xuicon xui-icon-print"
                     }
                 ])
             );
@@ -1067,7 +1058,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel35.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input61")
-                .setDirtyMark(false)
                 .setWidth("24.8125em")
                 .setPosition("relative")
                 .setLabelSize("8em")
@@ -1077,7 +1067,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel35.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput693")
-                .setDirtyMark(false)
                 .setWidth("24.8125em")
                 .setPosition("relative")
                 .setLabelSize("8em")
@@ -1088,7 +1077,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel35.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput697")
-                .setDirtyMark(false)
                 .setWidth("24.8125em")
                 .setPosition("relative")
                 .setLabelSize("8em")
@@ -1099,7 +1087,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel35.append(
                 xui.create("xui.UI.CheckBox")
                 .setHost(host,"xui_ui_checkbox1")
-                .setDirtyMark(false)
                 .setWidth("24.8125em")
                 .setPosition("relative")
                 .setHAlign("right")
@@ -1110,7 +1097,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel35.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input66")
-                .setDirtyMark(false)
                 .setWidth("24.8125em")
                 .setHeight("10em")
                 .setPosition("relative")
@@ -1132,7 +1118,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block135.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button100")
-                .setDirtyMark(false)
                 .setLeft("2.4375em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1142,7 +1127,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block135.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button101")
-                .setDirtyMark(false)
                 .setLeft("8.625em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1158,8 +1142,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("auto")
                 .setOverflow("visible")
                 .setConDockSpacing({
-                    "width":0,
-                    "height":10
+                    "width" : 0,
+                    "height" : 10
                 })
             );
             
@@ -1173,14 +1157,14 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("18.75em")
                 .setConLayoutColumns(1)
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 })
                 .setCaption("Style")
                 .setImageClass("fa fa-lg fa-paint-brush")
@@ -1190,7 +1174,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel34.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput62")
-                .setDirtyMark(false)
                 .setWidth("24.875em")
                 .setPosition("relative")
                 .setLabelSize("12em")
@@ -1198,15 +1181,15 @@ xui.Class('App', 'xui.Module',{
                 .setType("listbox")
                 .setItems([
                     {
-                        "id":"Arail",
-                        "caption":"Arail",
-                        "imageClass":""
+                        "id" : "Arail",
+                        "caption" : "Arail",
+                        "imageClass" : ""
                     },
                     {
-                        "id":"Verdada",
-                        "caption":"Verdada",
-                        "imageClass":"",
-                        "disabled":false
+                        "id" : "Verdada",
+                        "caption" : "Verdada",
+                        "imageClass" : "",
+                        "disabled" : false
                     }
                 ])
             );
@@ -1214,22 +1197,21 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel34.append(
                 xui.create("xui.UI.RadioBox")
                 .setHost(host,"xui_ui_radiobox1")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"400",
-                        "caption":"400",
-                        "imageClass":""
+                        "id" : "400",
+                        "caption" : "400",
+                        "imageClass" : ""
                     },
                     {
-                        "id":"700",
-                        "caption":"700",
-                        "imageClass":""
+                        "id" : "700",
+                        "caption" : "700",
+                        "imageClass" : ""
                     },
                     {
-                        "id":"900",
-                        "caption":"900",
-                        "imageClass":""
+                        "id" : "900",
+                        "caption" : "900",
+                        "imageClass" : ""
                     }
                 ])
                 .setWidth("24.875em")
@@ -1243,7 +1225,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel34.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput473")
-                .setDirtyMark(false)
                 .setWidth("24.875em")
                 .setPosition("relative")
                 .setLabelSize("12em")
@@ -1254,7 +1235,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel34.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput477")
-                .setDirtyMark(false)
                 .setWidth("24.875em")
                 .setPosition("relative")
                 .setLabelSize("12em")
@@ -1275,7 +1255,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block134.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button98")
-                .setDirtyMark(false)
                 .setLeft("1.1875em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1285,7 +1264,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block134.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button99")
-                .setDirtyMark(false)
                 .setLeft("7.375em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1302,14 +1280,14 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("19.375em")
                 .setConLayoutColumns(1)
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 })
                 .setCaption("Project")
                 .setImageClass("fa fa-lg fa-star")
@@ -1329,7 +1307,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block11.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
-                .setDirtyMark(false)
                 .setLeft("1.4375em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1340,7 +1317,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block11.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button6")
-                .setDirtyMark(false)
                 .setLeft("8.6875em")
                 .setTop("0.625em")
                 .setWidth("4.9375em")
@@ -1351,7 +1327,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel36.append(
                 xui.create("xui.UI.Slider")
                 .setHost(host,"xui_ui_slider1")
-                .setDirtyMark(false)
                 .setLeft("2.5em")
                 .setTop("6.875em")
                 .setWidth("24.875em")
@@ -1368,7 +1343,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel36.append(
                 xui.create("xui.UI.Slider")
                 .setHost(host,"xui_ui_slider7")
-                .setDirtyMark(false)
                 .setLeft("3.3333333333333335em")
                 .setTop("7.75em")
                 .setWidth("24.875em")
@@ -1385,7 +1359,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel36.append(
                 xui.create("xui.UI.Slider")
                 .setHost(host,"xui_ui_slider8")
-                .setDirtyMark(false)
                 .setLeft("4.166666666666667em")
                 .setTop("8.583333333333334em")
                 .setWidth("24.875em")
@@ -1402,7 +1375,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel36.append(
                 xui.create("xui.UI.Slider")
                 .setHost(host,"xui_ui_slider9")
-                .setDirtyMark(false)
                 .setLeft("5em")
                 .setTop("9.416666666666666em")
                 .setWidth("24.875em")
@@ -1418,7 +1390,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel36.append(
                 xui.create("xui.UI.Slider")
                 .setHost(host,"xui_ui_slider10")
-                .setDirtyMark(false)
                 .setLeft("5.833333333333333em")
                 .setTop("10.25em")
                 .setWidth("24.875em")
@@ -1438,14 +1409,14 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("11.25em")
                 .setTop("11.875em")
                 .setConDockPadding({
-                    "left":10,
-                    "top":10,
-                    "right":10,
-                    "bottom":10
+                    "left" : 10,
+                    "top" : 10,
+                    "right" : 10,
+                    "bottom" : 10
                 })
                 .setConDockSpacing({
-                    "width":10,
-                    "height":10
+                    "width" : 10,
+                    "height" : 10
                 }),
                 "d"
             );
@@ -1465,27 +1436,26 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block30.append(
                 xui.create("xui.UI.StatusButtons")
                 .setHost(host,"xui_ui_statusbuttons1")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"new",
-                        "caption":"New Folder",
-                        "imageClass":"xui-icon-file-fold"
+                        "id" : "new",
+                        "caption" : "New Folder",
+                        "imageClass" : "xui-icon-file-fold"
                     },
                     {
-                        "id":"rename",
-                        "caption":"Rename",
-                        "imageClass":"fa fa-lg fa-edit"
+                        "id" : "rename",
+                        "caption" : "Rename",
+                        "imageClass" : "fa fa-lg fa-edit"
                     },
                     {
-                        "id":"refresh",
-                        "caption":"Refresh",
-                        "imageClass":"xui-uicmd-refresh"
+                        "id" : "refresh",
+                        "caption" : "Refresh",
+                        "imageClass" : "xui-uicmd-refresh"
                     },
                     {
-                        "id":"del",
-                        "caption":"Delete",
-                        "imageClass":"xui-uicmd-delete"
+                        "id" : "del",
+                        "caption" : "Delete",
+                        "imageClass" : "xui-uicmd-delete"
                     }
                 ])
                 .setLeft("0.625em")
@@ -1497,69 +1467,69 @@ xui.Class('App', 'xui.Module',{
                 .setValue("")
                 .onItemSelected([
                     {
-                        "desc":"new",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[
+                        "desc" : "new",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [
                             [
                                 {
-                                    "id":"?",
-                                    "caption":"new Folder",
-                                    "imageClass":"xui-icon-file-fold"
+                                    "id" : "?",
+                                    "caption" : "new Folder",
+                                    "imageClass" : "xui-icon-file-fold"
                                 }
                             ],
                             true,
                             "",
                             false
                         ],
-                        "method":"insertItems",
-                        "conditions":[
+                        "method" : "insertItems",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"new"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "new"
                             }
                         ]
                     },
                     {
-                        "desc":"rename",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[null],
-                        "method":"editItem",
-                        "conditions":[
+                        "desc" : "rename",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [null],
+                        "method" : "editItem",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"rename"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "rename"
                             }
                         ]
                     },
                     {
-                        "desc":"del",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[ ],
-                        "method":"removeItems",
-                        "conditions":[
+                        "desc" : "del",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [ ],
+                        "method" : "removeItems",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"del"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "del"
                             }
                         ]
                     },
                     {
-                        "desc":"del-2",
-                        "type":"control",
-                        "target":"xui_ui_gallery10",
-                        "params":[ ],
-                        "method":"clearItems",
-                        "conditions":[
+                        "desc" : "del-2",
+                        "type" : "control",
+                        "target" : "xui_ui_gallery10",
+                        "params" : [ ],
+                        "method" : "clearItems",
+                        "conditions" : [
                             {
-                                "left":"{args[1].id}",
-                                "symbol":"=",
-                                "right":"del"
+                                "left" : "{args[1].id}",
+                                "symbol" : "=",
+                                "right" : "del"
                             }
                         ]
                     }
@@ -1569,7 +1539,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_block30.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button59")
-                .setDirtyMark(false)
                 .setTop("0.3125em")
                 .setHeight("2.5em")
                 .setRight("1em")
@@ -1577,23 +1546,23 @@ xui.Class('App', 'xui.Module',{
                 .setImageClass("xui-icon-upload")
                 .onClick([
                     {
-                        "desc":"sel file",
-                        "type":"other",
-                        "target":"url",
-                        "params":[ ],
-                        "method":"selectFile",
-                        "onOK":0
+                        "desc" : "sel file",
+                        "type" : "other",
+                        "target" : "url",
+                        "params" : [ ],
+                        "method" : "selectFile",
+                        "onOK" : 0
                     },
                     {
-                        "desc":"alert name",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "alert name",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "File",
                             "{temp.okData.value}"
                         ],
-                        "method":"alert",
-                        "onOK":2
+                        "method" : "alert",
+                        "onOK" : 2
                     }
                 ])
             );
@@ -1614,38 +1583,38 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_layout11")
                 .setItems([
                     {
-                        "id":"before",
-                        "pos":"before",
-                        "size":200,
-                        "min":10,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":false,
-                        "cmd":false
+                        "id" : "before",
+                        "pos" : "before",
+                        "size" : 200,
+                        "min" : 10,
+                        "locked" : false,
+                        "folded" : false,
+                        "hidden" : false,
+                        "cmd" : false
                     },
                     {
-                        "id":"main",
-                        "size":80,
-                        "min":10
+                        "id" : "main",
+                        "size" : 80,
+                        "min" : 10
                     },
                     {
-                        "id":"after",
-                        "pos":"after",
-                        "size":80,
-                        "min":10,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":true,
-                        "cmd":false
+                        "id" : "after",
+                        "pos" : "after",
+                        "size" : 80,
+                        "min" : 10,
+                        "locked" : false,
+                        "folded" : false,
+                        "hidden" : true,
+                        "cmd" : false
                     }
                 ])
                 .setLeft("0em")
                 .setTop("0em")
                 .setType("horizontal")
                 .setCustomStyle({
-                    "MOVE":{
-                        "color":"transparent",
-                        "border":"none"
+                    "MOVE" : {
+                        "color" : "transparent",
+                        "border" : "none"
                     }
                 })
             );
@@ -1653,59 +1622,58 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_layout11.append(
                 xui.create("xui.UI.TreeView")
                 .setHost(host,"xui_ui_treeview12")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"files",
-                        "caption":"Files",
-                        "iniFold":false,
-                        "sub":[
+                        "id" : "files",
+                        "caption" : "Files",
+                        "iniFold" : false,
+                        "sub" : [
                             {
-                                "id":"doc",
-                                "caption":"Documents",
-                                "imageClass":"",
-                                "sub":[
+                                "id" : "doc",
+                                "caption" : "Documents",
+                                "imageClass" : "",
+                                "sub" : [
                                     {
-                                        "id":"pdf",
-                                        "caption":"Pdf",
-                                        "imageClass":"xui-icon-file-fold"
+                                        "id" : "pdf",
+                                        "caption" : "Pdf",
+                                        "imageClass" : "xui-icon-file-fold"
                                     },
                                     {
-                                        "id":"excel",
-                                        "caption":"Excel",
-                                        "imageClass":"xui-icon-file-fold"
+                                        "id" : "excel",
+                                        "caption" : "Excel",
+                                        "imageClass" : "xui-icon-file-fold"
                                     },
                                     {
-                                        "id":"word",
-                                        "caption":"Word",
-                                        "imageClass":"xui-icon-file-fold"
+                                        "id" : "word",
+                                        "caption" : "Word",
+                                        "imageClass" : "xui-icon-file-fold"
                                     },
                                     {
-                                        "id":"ppt",
-                                        "caption":"Ppt",
-                                        "imageClass":"xui-icon-file-fold"
+                                        "id" : "ppt",
+                                        "caption" : "Ppt",
+                                        "imageClass" : "xui-icon-file-fold"
                                     },
                                     {
-                                        "id":"txt",
-                                        "caption":"Txt",
-                                        "imageClass":"xui-icon-file-fold"
+                                        "id" : "txt",
+                                        "caption" : "Txt",
+                                        "imageClass" : "xui-icon-file-fold"
                                     }
                                 ]
                             },
                             {
-                                "id":"img",
-                                "caption":"Images",
-                                "imageClass":"xui-icon-file-fold"
+                                "id" : "img",
+                                "caption" : "Images",
+                                "imageClass" : "xui-icon-file-fold"
                             },
                             {
-                                "id":"video",
-                                "caption":"Videos",
-                                "imageClass":"xui-icon-file-fold"
+                                "id" : "video",
+                                "caption" : "Videos",
+                                "imageClass" : "xui-icon-file-fold"
                             },
                             {
-                                "id":"prj",
-                                "caption":"Projects",
-                                "imageClass":"xui-icon-file-fold"
+                                "id" : "prj",
+                                "caption" : "Projects",
+                                "imageClass" : "xui-icon-file-fold"
                             }
                         ]
                     }
@@ -1717,43 +1685,43 @@ xui.Class('App', 'xui.Module',{
                 .setValue("")
                 .onDblclick([
                     {
-                        "desc":"Action 1",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[null],
-                        "method":"editItem"
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [null],
+                        "method" : "editItem"
                     }
                 ])
                 .onItemSelected([
                     {
-                        "desc":"assign",
-                        "type":"other",
-                        "target":"var",
-                        "params":[
+                        "desc" : "assign",
+                        "type" : "other",
+                        "target" : "var",
+                        "params" : [
                             "temp1",
                             "[data]data/folders.json",
                             "{args[1].id}"
                         ],
-                        "method":"temp"
+                        "method" : "temp"
                     },
                     {
-                        "desc":"clear",
-                        "type":"control",
-                        "target":"xui_ui_gallery10",
-                        "params":[ ],
-                        "method":"clearItems"
+                        "desc" : "clear",
+                        "type" : "control",
+                        "target" : "xui_ui_gallery10",
+                        "params" : [ ],
+                        "method" : "clearItems"
                     },
                     {
-                        "desc":"add",
-                        "type":"other",
-                        "target":"callback",
-                        "params":[
+                        "desc" : "add",
+                        "type" : "other",
+                        "target" : "callback",
+                        "params" : [
                             "{page.xui_ui_gallery10.setItems}",
                             undefined,
                             undefined,
                             "{temp.temp1}"
                         ],
-                        "method":"call"
+                        "method" : "call"
                     }
                 ]),
                 "before"
@@ -1762,7 +1730,6 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_layout11.append(
                 xui.create("xui.UI.Gallery")
                 .setHost(host,"xui_ui_gallery10")
-                .setDirtyMark(false)
                 .setDock("fill")
                 .setLeft("9.375em")
                 .setTop("11.875em")
@@ -1776,13 +1743,13 @@ xui.Class('App', 'xui.Module',{
                 .setValue("a")
                 .onDblclick([
                     {
-                        "desc":"Action 1",
-                        "type":"control",
-                        "target":"xui_ui_treeview12",
-                        "params":[
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_ui_treeview12",
+                        "params" : [
                             "{args[1].id}"
                         ],
-                        "method":"fireItemClickEvent"
+                        "method" : "fireItemClickEvent"
                     }
                 ]),
                 "main"
@@ -1793,14 +1760,14 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_div26")
                 .setDock("fill")
                 .setConDockPadding({
-                    "left":12,
-                    "top":12,
-                    "right":12,
-                    "bottom":12
+                    "left" : 12,
+                    "top" : 12,
+                    "right" : 12,
+                    "bottom" : 12
                 })
                 .setConDockSpacing({
-                    "width":12,
-                    "height":12
+                    "width" : 12,
+                    "height" : 12
                 }),
                 "a"
             );
@@ -1813,9 +1780,9 @@ xui.Class('App', 'xui.Module',{
                 .setDockStretch("0.25")
                 .setHeight("6.75em")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#A693EB"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#A693EB"
                     }
                 })
             );
@@ -1839,9 +1806,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("12")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"2em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "2em"
                     }
                 })
             );
@@ -1855,9 +1822,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("New Users")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"1em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "1em"
                     }
                 })
             );
@@ -1872,12 +1839,12 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("1.6875em")
                 .setHtml("&gt;&gt; View more")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#9E8CE0",
-                        "font-size":".75em",
-                        "text-align":"center",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#9E8CE0",
+                        "font-size" : ".75em",
+                        "text-align" : "center",
+                        "cursor" : "pointer"
                     }
                 })
             );
@@ -1904,9 +1871,9 @@ xui.Class('App', 'xui.Module',{
                 .setDockStretch("0.25")
                 .setHeight("6.75em")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#A693EB"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#A693EB"
                     }
                 })
             );
@@ -1930,9 +1897,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("25")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"2em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "2em"
                     }
                 })
             );
@@ -1946,9 +1913,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("New Orders")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"1em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "1em"
                     }
                 })
             );
@@ -1963,12 +1930,12 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("1.6875em")
                 .setHtml("&gt;&gt; View more")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#9E8CE0",
-                        "font-size":".75em",
-                        "text-align":"center",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#9E8CE0",
+                        "font-size" : ".75em",
+                        "text-align" : "center",
+                        "cursor" : "pointer"
                     }
                 })
             );
@@ -1995,9 +1962,9 @@ xui.Class('App', 'xui.Module',{
                 .setDockStretch("0.25")
                 .setHeight("6.75em")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#F19B60"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#F19B60"
                     }
                 })
             );
@@ -2021,9 +1988,9 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("auto")
                 .setHtml("32")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"2em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "2em"
                     }
                 })
             );
@@ -2036,9 +2003,9 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("auto")
                 .setHtml("Messages")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"1em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "1em"
                     }
                 })
             );
@@ -2053,12 +2020,12 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("1.6875em")
                 .setHtml("&gt;&gt; View more")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#E6945C",
-                        "font-size":".75em",
-                        "text-align":"center",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#E6945C",
+                        "font-size" : ".75em",
+                        "text-align" : "center",
+                        "cursor" : "pointer"
                     }
                 })
             );
@@ -2085,9 +2052,9 @@ xui.Class('App', 'xui.Module',{
                 .setDockStretch("0.25")
                 .setHeight("6.75em")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#49CD81"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#49CD81"
                     }
                 })
             );
@@ -2111,9 +2078,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("8")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"2em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "2em"
                     }
                 })
             );
@@ -2127,9 +2094,9 @@ xui.Class('App', 'xui.Module',{
                 .setZIndex(1002)
                 .setHtml("New Tasks")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "font-size":"1em"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "font-size" : "1em"
                     }
                 })
             );
@@ -2144,12 +2111,12 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("1.6875em")
                 .setHtml("&gt;&gt; View more")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#46C37B",
-                        "font-size":".75em",
-                        "text-align":"center",
-                        "cursor":"pointer"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#46C37B",
+                        "font-size" : ".75em",
+                        "text-align" : "center",
+                        "cursor" : "pointer"
                     }
                 })
             );
@@ -2173,10 +2140,10 @@ xui.Class('App', 'xui.Module',{
                 .setDock("top")
                 .setDockOrder(7)
                 .setDockMargin({
-                    "left":0,
-                    "top":6,
-                    "right":0,
-                    "bottom":6
+                    "left" : 0,
+                    "top" : 6,
+                    "right" : 0,
+                    "bottom" : 6
                 })
                 .setDockMinW("20em")
                 .setDockStretch(".5")
@@ -2207,10 +2174,10 @@ xui.Class('App', 'xui.Module',{
                 .setPosition("relative")
                 .setHtml(" \n    <div>\n        <span style=\"font-size: x-small;\">\n            <font color=\"#8a2be2\">\n                <b>\n                    \n                Tina\n                </b>\n            </font>\n            <i>\n                <font color=\"#bc8f8f\">\n                    3 mins ago&nbsp;\n                </font>\n            </i>\n        </span>\n    </div>\n    <div>\n        <span style=\"font-size: x-small;\">\n            The screenshot above shows the default column layout. Click the column picker button on the far right of the label bar to see a list of the available columns. Alternatively, you can right-click on any column label to display the list.\n        </span>\n    </div>\n \n")
                 .setCustomStyle({
-                    "KEY":{
-                        "margin-left":"70px",
-                        "padding":"6px 6px 6px 12px",
-                        "border-left":"solid 3px #ff0000"
+                    "KEY" : {
+                        "margin-left" : "70px",
+                        "padding" : "6px 6px 6px 12px",
+                        "border-left" : "solid 3px #ff0000"
                     }
                 })
             );
@@ -2225,8 +2192,8 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("2.5em")
                 .setSrc("{/}img/animals-kitten_cute_toon_character_t.png")
                 .setCustomStyle({
-                    "KEY":{
-                        "background-color":"#FF69B4"
+                    "KEY" : {
+                        "background-color" : "#FF69B4"
                     }
                 })
             );
@@ -2249,13 +2216,40 @@ xui.Class('App', 'xui.Module',{
                 .setPosition("relative")
                 .setHtml("  <div style=\"text-align: right;\">\n        <span style=\"font-size: x-small;\">\n            <font color=\"#8a2be2\">\n                <b>\n                    \n                    Westing\n                </b>\n            </font>\n            <i>\n                <font color=\"#bc8f8f\">\n                    10:20\n                </font>\n            </i>\n        </span>\n    </div>\n    <div style=\"text-align: right;\">\n        <span style=\"font-size: x-small;\">\n            The screenshot above shows the default column layout. Click the column picker button on the far right of the label bar to see a list of the available columns. Alternatively, you can right-click on any column label to display the list.\n        </span>\n    </div>\n \n")
                 .setCustomStyle({
-                    "KEY":{
-                        "border-right":"solid 3px #ff0000",
-                        "padding":"6px 12px 6px 6px",
-                        "margin":"0 70px 0 0",
-                        "line-height":"1.22"
+                    "KEY" : {
+                        "border-right" : "solid 3px #ff0000",
+                        "padding" : "6px 12px 6px 6px",
+                        "margin" : "0 70px 0 0",
+                        "line-height" : "1.22"
                     }
                 })
+            );
+            
+            host.xui_ui_div106.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput282")
+                .setWidth("14em")
+                .setPosition("relative")
+                .setLabelSize("8em")
+                .setLabelCaption("Getter")
+                .setType("getter")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_messageservice1",
+                        "args" : [
+                            "{page.xui_messageservice1.broadcast()}",
+                            undefined,
+                            undefined,
+                            undefined,
+                            "{page.xui_ui_comboinput282.getValue()}"
+                        ],
+                        "method" : "broadcast",
+                        "redirection" : "other:callback:call",
+                        "event" : 1
+                    }
+                ])
             );
             
             host.xui_ui_div105.append(
@@ -2268,8 +2262,8 @@ xui.Class('App', 'xui.Module',{
                 .setRight("1.25em")
                 .setSrc("{/}img/people-kid_head.png")
                 .setCustomStyle({
-                    "KEY":{
-                        "background-color":"#FF69B4"
+                    "KEY" : {
+                        "background-color" : "#FF69B4"
                     }
                 })
             );
@@ -2280,10 +2274,10 @@ xui.Class('App', 'xui.Module',{
                 .setDock("top")
                 .setDockOrder(8)
                 .setDockMargin({
-                    "top":6,
-                    "right":0,
-                    "bottom":6,
-                    "left":0
+                    "top" : 6,
+                    "right" : 0,
+                    "bottom" : 6,
+                    "left" : 0
                 })
                 .setDockMinW("20em")
                 .setDockStretch(".5")
@@ -2304,9 +2298,9 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("1.5625em")
                 .setHtml("<div style=\"text-align: center;\">Show all &gt;&gt;</div>")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#FFFFFF",
-                        "background-color":"#B0C4DE"
+                    "KEY" : {
+                        "color" : "#FFFFFF",
+                        "background-color" : "#B0C4DE"
                     }
                 })
             );
@@ -2314,44 +2308,43 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_group4.append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list4")
-                .setDirtyMark(false)
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"Financial report",
-                        "imageClass":"",
-                        "tagCmds":[
+                        "id" : "a",
+                        "caption" : "Financial report",
+                        "imageClass" : "",
+                        "tagCmds" : [
                             {
-                                "id":"a",
-                                "location":"left",
-                                "itemClass":"xuicon xui-icon-star",
-                                "itemStyle":"color:#ff0000"
+                                "id" : "a",
+                                "location" : "left",
+                                "itemClass" : "xuicon xui-icon-star",
+                                "itemStyle" : "color:#ff0000"
                             }
                         ]
                     },
                     {
-                        "id":"b",
-                        "caption":"Member call",
-                        "imageClass":""
+                        "id" : "b",
+                        "caption" : "Member call",
+                        "imageClass" : ""
                     },
                     {
-                        "id":"c",
-                        "caption":"Research analysis",
-                        "imageClass":""
+                        "id" : "c",
+                        "caption" : "Research analysis",
+                        "imageClass" : ""
                     },
                     {
-                        "id":"d",
-                        "caption":"Home work",
-                        "imageClass":"",
-                        "disabled":true
+                        "id" : "d",
+                        "caption" : "Home work",
+                        "imageClass" : "",
+                        "disabled" : true
                     }
                 ])
                 .setDock("fill")
                 .setDockMargin({
-                    "left":8,
-                    "top":8,
-                    "right":8,
-                    "bottom":8
+                    "left" : 8,
+                    "top" : 8,
+                    "right" : 8,
+                    "bottom" : 8
                 })
                 .setLeft("5.625em")
                 .setTop("3.75em")
@@ -2360,9 +2353,9 @@ xui.Class('App', 'xui.Module',{
                 .setBorderType("none")
                 .setTagCmds([
                     {
-                        "id":"e",
-                        "location":"left",
-                        "itemClass":"xuicon xui-icon-placeholder"
+                        "id" : "e",
+                        "location" : "left",
+                        "itemClass" : "xuicon xui-icon-placeholder"
                     }
                 ])
                 .setLabelSize("8.333333333333334em")
@@ -2377,10 +2370,10 @@ xui.Class('App', 'xui.Module',{
                 .setDock("top")
                 .setDockOrder(5)
                 .setDockMargin({
-                    "left":0,
-                    "top":6,
-                    "right":0,
-                    "bottom":6
+                    "left" : 0,
+                    "top" : 6,
+                    "right" : 0,
+                    "bottom" : 6
                 })
                 .setDockMinW("20em")
                 .setDockStretch(".5")
@@ -2392,8 +2385,8 @@ xui.Class('App', 'xui.Module',{
                 .setImageClass("fa fa-lg fa-user-circle")
                 .setTagCmds([
                     {
-                        "id":"ref",
-                        "itemClass":"fa fa-lg fa-refresh"
+                        "id" : "ref",
+                        "itemClass" : "fa fa-lg fa-refresh"
                     }
                 ])
             );
@@ -2404,64 +2397,64 @@ xui.Class('App', 'xui.Module',{
                 .setDock("fill")
                 .setLeft("8.75em")
                 .setTop("3.125em")
-                .setWidth("33.333333333333336em")
+                .setWidth("20em")
                 .setHeight("18.333333333333332em")
                 .setChartType("Area2D")
                 .setJSONData({
-                    "chart":{
-                        "yaxisname":"Unique Visitors",
-                        "useroundedges":"1",
-                        "bgcolor":"FFFFFF,FFFFFF",
-                        "showShadow":"0",
-                        "showborder":"0",
-                        "rotatevalues":"1",
-                        "xaxisname":"Month",
-                        "animation":"0",
-                        "borderthickness":"1",
-                        "showplotborder":"1",
-                        "canvasborderthickness":"1",
-                        "bordercolor":"808080",
-                        "plotborderthickness":"1",
-                        "plotbordercolor":"0000CD",
-                        "plotborderdashed":"0"
+                    "chart" : {
+                        "yaxisname" : "Unique Visitors",
+                        "useroundedges" : "1",
+                        "bgcolor" : "FFFFFF,FFFFFF",
+                        "showShadow" : "0",
+                        "showborder" : "0",
+                        "rotatevalues" : "1",
+                        "xaxisname" : "Month",
+                        "animation" : "0",
+                        "borderthickness" : "1",
+                        "showplotborder" : "1",
+                        "canvasborderthickness" : "1",
+                        "bordercolor" : "808080",
+                        "plotborderthickness" : "1",
+                        "plotbordercolor" : "0000CD",
+                        "plotborderdashed" : "0"
                     },
-                    "data":[
+                    "data" : [
                         {
-                            "label":"January",
-                            "value":"146"
+                            "label" : "January",
+                            "value" : "146"
                         },
                         {
-                            "label":"February",
-                            "value":"167"
+                            "label" : "February",
+                            "value" : "167"
                         },
                         {
-                            "label":"March",
-                            "value":"245"
+                            "label" : "March",
+                            "value" : "245"
                         },
                         {
-                            "label":"April",
-                            "value":"267"
+                            "label" : "April",
+                            "value" : "267"
                         },
                         {
-                            "label":"May",
-                            "value":"333"
+                            "label" : "May",
+                            "value" : "333"
                         },
                         {
-                            "label":"June",
-                            "value":"336"
+                            "label" : "June",
+                            "value" : "336"
                         }
                     ],
-                    "trendlines":[
+                    "trendlines" : [
                         {
-                            "line":[ ]
+                            "line" : [ ]
                         }
                     ],
-                    "annotations":{
-                        "groups":[
+                    "annotations" : {
+                        "groups" : [
                             {
-                                "items":[
+                                "items" : [
                                     {
-                                        "type":"text"
+                                        "type" : "text"
                                     }
                                 ]
                             }
@@ -2476,10 +2469,10 @@ xui.Class('App', 'xui.Module',{
                 .setDock("top")
                 .setDockOrder(6)
                 .setDockMargin({
-                    "left":0,
-                    "top":6,
-                    "right":0,
-                    "bottom":6
+                    "left" : 0,
+                    "top" : 6,
+                    "right" : 0,
+                    "bottom" : 6
                 })
                 .setDockMinW("20em")
                 .setDockStretch(".5")
@@ -2491,8 +2484,8 @@ xui.Class('App', 'xui.Module',{
                 .setImageClass("fa fa-lg fa-wpforms")
                 .setTagCmds([
                     {
-                        "id":"ref",
-                        "itemClass":"fa fa-lg fa-refresh"
+                        "id" : "ref",
+                        "itemClass" : "fa fa-lg fa-refresh"
                     }
                 ])
             );
@@ -2503,58 +2496,58 @@ xui.Class('App', 'xui.Module',{
                 .setDock("fill")
                 .setLeft("3.75em")
                 .setTop("5em")
-                .setWidth("33.333333333333336em")
+                .setWidth("20em")
                 .setHeight("18.333333333333332em")
                 .setJSONData({
-                    "chart":{
-                        "xaxisname":"Month",
-                        "yaxisname":"Orders",
-                        "useroundedges":"0",
-                        "bgcolor":"FFFFFF,FFFFFF",
-                        "showborder":"0",
-                        "rotatevalues":"0",
-                        "animation":"0",
-                        "useellipseswhenoverflow":"0",
-                        "showshadow":"0",
-                        "canvasborderthickness":"1"
+                    "chart" : {
+                        "xaxisname" : "Month",
+                        "yaxisname" : "Orders",
+                        "useroundedges" : "0",
+                        "bgcolor" : "FFFFFF,FFFFFF",
+                        "showborder" : "0",
+                        "rotatevalues" : "0",
+                        "animation" : "0",
+                        "useellipseswhenoverflow" : "0",
+                        "showshadow" : "0",
+                        "canvasborderthickness" : "1"
                     },
-                    "data":[
+                    "data" : [
                         {
-                            "label":"January",
-                            "value":"1740"
+                            "label" : "January",
+                            "value" : "1740"
                         },
                         {
-                            "label":"February",
-                            "value":"1908"
+                            "label" : "February",
+                            "value" : "1908"
                         },
                         {
-                            "label":"March",
-                            "value":"2180"
+                            "label" : "March",
+                            "value" : "2180"
                         },
                         {
-                            "label":"April",
-                            "value":"2380"
+                            "label" : "April",
+                            "value" : "2380"
                         },
                         {
-                            "label":"May",
-                            "value":"2960"
+                            "label" : "May",
+                            "value" : "2960"
                         },
                         {
-                            "label":"June",
-                            "value":"2760"
+                            "label" : "June",
+                            "value" : "2760"
                         }
                     ],
-                    "trendlines":[
+                    "trendlines" : [
                         {
-                            "line":[ ]
+                            "line" : [ ]
                         }
                     ],
-                    "annotations":{
-                        "groups":[
+                    "annotations" : {
+                        "groups" : [
                             {
-                                "items":[
+                                "items" : [
                                     {
-                                        "type":"text"
+                                        "type" : "text"
                                     }
                                 ]
                             }
@@ -2582,8 +2575,8 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.25em")
                 .setCaption("Charts&nbsp;&nbsp;<em style='font-size:12px'>(demo)</em>")
                 .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
+                    "KEY" : {
+                        "font-size" : "1.25em"
                     }
                 })
             );
@@ -2607,8 +2600,8 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.25em")
                 .setCaption("Home&nbsp;&nbsp;<em style='font-size:12px'>(demo)</em>")
                 .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
+                    "KEY" : {
+                        "font-size" : "1.25em"
                     }
                 })
             );
@@ -2632,8 +2625,8 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.25em")
                 .setCaption("Forms&nbsp;&nbsp;<em style='font-size:12px'>(demo)</em>")
                 .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
+                    "KEY" : {
+                        "font-size" : "1.25em"
                     }
                 })
             );
@@ -2658,10 +2651,15 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.25em")
                 .setCaption("File Manager&nbsp;&nbsp;<em style='font-size:12px'>(demo)</em>")
                 .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
+                    "KEY" : {
+                        "font-size" : "1.25em"
                     }
                 })
+            );
+            
+            append(
+                xui.create("xui.MessageService")
+                .setHost(host,"xui_messageservice1")
             );
             
             append(
