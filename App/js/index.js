@@ -2240,15 +2240,41 @@ xui.Class('App', 'xui.Module',{
                         "type" : "control",
                         "target" : "xui_messageservice1",
                         "args" : [
+                            {
+                                "asynReceive" : true
+                            },
+                            {
+                            }
+                        ],
+                        "method" : "setProperties",
+                        "event" : 1
+                    },
+                    {
+                        "desc" : "Action 2",
+                        "type" : "control",
+                        "target" : "xui_messageservice1",
+                        "args" : [
                             "{page.xui_messageservice1.broadcast()}",
                             undefined,
                             undefined,
                             undefined,
-                            "{page.xui_ui_comboinput282.getValue()}"
+                            "{args[3]}"
                         ],
                         "method" : "broadcast",
-                        "redirection" : "other:callback:call",
-                        "event" : 1
+                        "redirection" : "other:callback:call"
+                    },
+                    {
+                        "desc" : "Action 3",
+                        "type" : "control",
+                        "target" : "xui_ui_input62",
+                        "args" : [
+                            "{page.xui_ui_input62.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{page.xui_messageservice1.getDesc()}"
+                        ],
+                        "method" : "setUIValue",
+                        "redirection" : "other:callback:call"
                     }
                 ])
             );
@@ -2656,6 +2682,18 @@ xui.Class('App', 'xui.Module',{
                         "font-size" : "1.25em"
                     }
                 })
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input62")
+                .setLeft("9.933333333333334em")
+                .setTop("23.933333333333334em")
+                .setWidth("18em")
+                .setHeight("10em")
+                .setLabelSize("8em")
+                .setLabelCaption("Text Area")
+                .setMultiLines(true)
             );
             
             append(
