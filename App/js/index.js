@@ -2229,6 +2229,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput282")
                 .setWidth("14em")
+                .setZIndex(1003)
                 .setPosition("relative")
                 .setLabelSize("8em")
                 .setLabelCaption("Getter")
